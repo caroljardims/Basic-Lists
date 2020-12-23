@@ -14,6 +14,14 @@
 		921A1C6F2593D4B9001617A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921A1C6D2593D4B9001617A0 /* LaunchScreen.storyboard */; };
 		921A1C7A2593D4BA001617A0 /* list_XibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1C792593D4BA001617A0 /* list_XibTests.swift */; };
 		921A1C852593D4BA001617A0 /* list_XibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1C842593D4BA001617A0 /* list_XibUITests.swift */; };
+		921A1CA32593D629001617A0 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CA12593D629001617A0 /* UIImageView+URL.swift */; };
+		921A1CA42593D629001617A0 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CA22593D629001617A0 /* Double+Currency.swift */; };
+		921A1CA92593D635001617A0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CA82593D635001617A0 /* Product.swift */; };
+		921A1CB02593D67C001617A0 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CAF2593D67C001617A0 /* ProductsService.swift */; };
+		921A1CB72593D6B1001617A0 /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CB52593D6B1001617A0 /* ProductsListCell.swift */; };
+		921A1CB82593D6B1001617A0 /* ProductsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921A1CB62593D6B1001617A0 /* ProductsListCell.xib */; };
+		921A1CC02593D712001617A0 /* ProductsListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921A1CBE2593D712001617A0 /* ProductsListView.xib */; };
+		921A1CC12593D712001617A0 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A1CBF2593D712001617A0 /* ProductsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		921A1C802593D4BA001617A0 /* list-XibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "list-XibUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		921A1C842593D4BA001617A0 /* list_XibUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list_XibUITests.swift; sourceTree = "<group>"; };
 		921A1C862593D4BA001617A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921A1CA12593D629001617A0 /* UIImageView+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
+		921A1CA22593D629001617A0 /* Double+Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		921A1CA82593D635001617A0 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		921A1CAF2593D67C001617A0 /* ProductsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		921A1CB52593D6B1001617A0 /* ProductsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
+		921A1CB62593D6B1001617A0 /* ProductsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsListCell.xib; sourceTree = "<group>"; };
+		921A1CBE2593D712001617A0 /* ProductsListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsListView.xib; sourceTree = "<group>"; };
+		921A1CBF2593D712001617A0 /* ProductsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +113,14 @@
 		921A1C612593D4B8001617A0 /* list-Xib */ = {
 			isa = PBXGroup;
 			children = (
+				921A1CBC2593D6F5001617A0 /* Modules */,
+				921A1C9C2593D5E9001617A0 /* Components */,
+				921A1C9D2593D5EF001617A0 /* Services */,
+				921A1C9E2593D5FB001617A0 /* Utilities */,
+				921A1CAD2593D653001617A0 /* Resources */,
+				921A1C662593D4B8001617A0 /* ViewController.swift */,
 				921A1C622593D4B8001617A0 /* AppDelegate.swift */,
 				921A1C642593D4B8001617A0 /* SceneDelegate.swift */,
-				921A1C662593D4B8001617A0 /* ViewController.swift */,
-				921A1C6B2593D4B9001617A0 /* Assets.xcassets */,
 				921A1C6D2593D4B9001617A0 /* LaunchScreen.storyboard */,
 				921A1C702593D4B9001617A0 /* Info.plist */,
 			);
@@ -123,6 +143,82 @@
 				921A1C862593D4BA001617A0 /* Info.plist */,
 			);
 			path = "list-XibUITests";
+			sourceTree = "<group>";
+		};
+		921A1C9B2593D5D8001617A0 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CBE2593D712001617A0 /* ProductsListView.xib */,
+				921A1CBF2593D712001617A0 /* ProductsListViewController.swift */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		921A1C9C2593D5E9001617A0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CB42593D69D001617A0 /* ProductsListCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		921A1C9D2593D5EF001617A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CAF2593D67C001617A0 /* ProductsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		921A1C9E2593D5FB001617A0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				921A1C9F2593D604001617A0 /* Models */,
+				921A1CA02593D60F001617A0 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		921A1C9F2593D604001617A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CA82593D635001617A0 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		921A1CA02593D60F001617A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CA22593D629001617A0 /* Double+Currency.swift */,
+				921A1CA12593D629001617A0 /* UIImageView+URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		921A1CAD2593D653001617A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				921A1C6B2593D4B9001617A0 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		921A1CB42593D69D001617A0 /* ProductsListCell */ = {
+			isa = PBXGroup;
+			children = (
+				921A1CB52593D6B1001617A0 /* ProductsListCell.swift */,
+				921A1CB62593D6B1001617A0 /* ProductsListCell.xib */,
+			);
+			path = ProductsListCell;
+			sourceTree = "<group>";
+		};
+		921A1CBC2593D6F5001617A0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				921A1C9B2593D5D8001617A0 /* ProductList */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +324,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921A1CC02593D712001617A0 /* ProductsListView.xib in Resources */,
 				921A1C6F2593D4B9001617A0 /* LaunchScreen.storyboard in Resources */,
 				921A1C6C2593D4B9001617A0 /* Assets.xcassets in Resources */,
+				921A1CB82593D6B1001617A0 /* ProductsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,9 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921A1CA42593D629001617A0 /* Double+Currency.swift in Sources */,
+				921A1CB72593D6B1001617A0 /* ProductsListCell.swift in Sources */,
 				921A1C672593D4B8001617A0 /* ViewController.swift in Sources */,
+				921A1CB02593D67C001617A0 /* ProductsService.swift in Sources */,
 				921A1C632593D4B8001617A0 /* AppDelegate.swift in Sources */,
+				921A1CA32593D629001617A0 /* UIImageView+URL.swift in Sources */,
 				921A1C652593D4B8001617A0 /* SceneDelegate.swift in Sources */,
+				921A1CA92593D635001617A0 /* Product.swift in Sources */,
+				921A1CC12593D712001617A0 /* ProductsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
